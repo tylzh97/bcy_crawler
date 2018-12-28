@@ -12,17 +12,23 @@
 二.使用方法
 -----
 1. Python版本
+
         Python 3.x
+
 2. 系统版本
+
         Windowns, Mac OS, Linux
+
 3. 依赖库
+
         BeautifulSoup, requests
+        
 ```bash
 > pip3 install requests
 > pip3 install beautifulsoup4
 ```
 4. 使用方法
-> Python3 bcy_single_climber.py
+> `Python3 bcy_single_climber.py`
 
 三.已知问题
 -----
