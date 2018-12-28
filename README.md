@@ -10,11 +10,11 @@
 <br>
 <br>
 ### 二.使用方法
-1. Python版本
+1. Python版本<br>
 &ensp;&ensp;&ensp;&ensp;Python 3.x<br>
-2. 系统版本
+2. 系统版本<br>
 &ensp;&ensp;&ensp;&ensp;Windowns, Mac OS, Linux<br>
-3. 依赖库
+3. 依赖库<br>
 &ensp;&ensp;&ensp;&ensp;BeautifulSoup, requests<br>
 ```bash
 > pip3 install requests
@@ -22,7 +22,7 @@
 ```
 <br>
 <br>
-4. 使用方法
+4. 使用方法<br>
 > Python3 bcy_single_climber.py
 <br>
 <br>
