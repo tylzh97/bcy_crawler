@@ -13,16 +13,16 @@
 -----
 1. Python版本
 
-        Python 3.x
+>>       Python 3.x
 
 2. 系统版本
 
-        Windowns, Mac OS, Linux
+>>       Windowns, Mac OS, Linux
 
 3. 依赖库
 
-        BeautifulSoup, requests
-        
+>>       BeautifulSoup, requests
+
 ```bash
 > pip3 install requests
 > pip3 install beautifulsoup4
