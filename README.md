@@ -8,17 +8,20 @@
 3. `bcy_user_climber.py`<br>
 &ensp;&ensp;&ensp;&ensp;半次元用户爬虫,能够爬取某用户的所有作品<br>
 <br>
+<br>
 ### 二.使用方法
 1. Python版本
-&ensp;&ensp;&ensp;&ensp;Python 3.x
+&ensp;&ensp;&ensp;&ensp;Python 3.x<br>
 2. 系统版本
-&ensp;&ensp;&ensp;&ensp;Windowns, Mac OS, Linux
+&ensp;&ensp;&ensp;&ensp;Windowns, Mac OS, Linux<br>
 3. 依赖库
-&ensp;&ensp;&ensp;&ensp;BeautifulSoup, requests
-``` bash
+&ensp;&ensp;&ensp;&ensp;BeautifulSoup, requests<br>
+```bash
 > pip3 install requests
 > pip3 install beautifulsoup4
 ```
+<br>
+<br>
 4. 使用方法
 > Python3 bcy_single_climber.py
 <br>
