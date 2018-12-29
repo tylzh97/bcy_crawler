@@ -17,17 +17,18 @@ from threading_control import threading_control
 
 # 通过url下载半次元图片
 class bcy_single_climber(object):
-    def __init__(self, url, cookie=None, path=None, name_prefix=None):
+    def __init__(self, url, cookie=None, path=None, name_prefix=None, callback=None):
         self.url = url
         self.response = None
         self.cookie = cookie
         self.path = path
         self.name_prefix = name_prefix
+        self.callback = callback
     
     def start(self):
         ssr_json = self.get_download_url_json()
         down_lst = self.get_download_list(ssr_json)
-        return self.download_with_list(down_lst, path=self.path, name_prefix=self.name_prefix)
+        return self.download_with_list(down_lst, path=self.path, name_prefix=self.name_prefix, callback=self.callback)
     
     # 分割含有'window.__ssr_data'字段的脚本中的json信息
     def get_download_url_json(self):
@@ -43,7 +44,7 @@ class bcy_single_climber(object):
                 break
         if not aim_script:
             return None
-        json_str = aim_script.text.split(';')[0].split('(')[1].split(')')[0]
+        json_str = aim_script.text.split(';')[0].split('JSON.parse(')[1][:-1]
         json_str = eval(json_str)
         return json_str
     
