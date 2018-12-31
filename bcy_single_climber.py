@@ -57,7 +57,7 @@ class bcy_single_climber(object):
         # coser昵称
         self.__coser_name = ssr_dic['detail']['detail_user']['uname']
         # 设置文件存储文件夹默认名
-        self.__auto_filename = self.__coser_name
+        self.__auto_filename = 'bcyc-' + self.__coser_name
         # 设置默认文件名前缀
         self.__auto_prefix = 'IMG'
         download_list = []
