@@ -56,7 +56,7 @@ class re_downloads(object):
         '''读取配置文件中的信息
         '''
         # 开启读写锁
-        self.__tlock.acquite()
+        self.__tlock.acquire()
         self.__cf.seek(0, whence=0)         # 将文件指针指向文件头部
         data = self.__cf.read()
         data_str = data.decode('UTF-8')
@@ -70,7 +70,7 @@ class re_downloads(object):
         '''更新配置文件中的信息
         '''
         # 开启读写锁
-        self.__tlock.acquite()
+        self.__tlock.acquire()
         self.__cf.seek(0, whence=0)         # 将文件指针指向文件头部
         data_str = json.dumps(dic)
         data = data_str.encode('UTF-8')
