@@ -1,0 +1,15 @@
+{
+	"version": "V0.0.1",
+	"timestamp": 0,
+	"download_list": [{
+		"url": "1.jpg",
+		"is_finished": 1,
+		"progress": 100,
+		"total": 100
+	}, {
+		"url": "2.jpg",
+		"is_finished": 0,
+		"progress": 50,
+		"total": 100
+	}]
+}
